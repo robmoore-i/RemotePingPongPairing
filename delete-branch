@@ -6,4 +6,4 @@ fi
 
 # NB. The order matters - the remote branch should be deleted first.
 git push --delete origin $1
-git branch -d $1
+git branch -D $1
