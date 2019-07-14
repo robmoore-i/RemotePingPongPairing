@@ -4,7 +4,8 @@ then
   exit 1
 fi
 
-git checkout -b remote-wip-$1
+wip_branch_name="remote-wip-$1"
+git checkout -b $wip_branch_name
 git add .
 git commit -m"Remote wip created by $1"
-git push --set-upstream origin remote-wip-rob
+git push --set-upstream origin $wip_branch_name
