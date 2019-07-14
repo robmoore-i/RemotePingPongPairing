@@ -8,9 +8,9 @@
 
 3. I run `./ping rob`
 
-- This puts your WIP onto a branch and pushes it.
+- This puts my WIP onto a branch and pushes it.
 
-- You are responsible for deleting your local copy of the branch.
+- I am responsible for deleting my local copy of the branch.
 
 4. My partner runs `./pong rob`
 
@@ -29,9 +29,9 @@ current branch, but without effecting the version control history.
 
 3. I run `./ping rob`
 
-- This puts your WIP onto a branch and pushes it.
+- This puts my WIP onto a branch and pushes it.
 
-- You are responsible for deleting your local copy of the branch.
+- I am responsible for deleting my local copy of the branch.
 
 4. My partner runs `./pong rob`
 
