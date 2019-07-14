@@ -4,5 +4,6 @@ then
   exit 1
 fi
 
-git branch -d $1
+# NB. The order matters - the remote branch should be deleted first.
 git push --delete $1
+git branch -d $1
