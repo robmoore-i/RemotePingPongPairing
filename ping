@@ -1,0 +1,10 @@
+if [[ $# != "1" ]]
+then
+  echo "USAGE: $0 <your name>"
+  exit 1
+fi
+
+git checkout -b remote-wip-$1
+git add .
+git commit -m"Remote wip created by $1"
+git push
