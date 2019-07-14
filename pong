@@ -4,5 +4,7 @@ then
   exit 1
 fi
 
-git checkout remote-wip-$1
-git pull
+branch_name="remote-wip-$1"
+git fetch origin $branch_name
+git merge $branch_name
+
