@@ -7,4 +7,4 @@ fi
 git checkout -b remote-wip-$1
 git add .
 git commit -m"Remote wip created by $1"
-git push
+git push --set-upstream origin remote-wip-rob
