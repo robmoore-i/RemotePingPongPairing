@@ -1,0 +1,8 @@
+if [[ $# != "1" ]]
+then
+  echo "USAGE: $0 <branch name>"
+  exit 1
+fi
+
+git branch -d $1
+git push --delete $1
