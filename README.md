@@ -28,7 +28,8 @@
 ### Recommended usage
 
 1. Clone this repository somewhere
-2. Add it to your path.
+
+2. Add it to your $PATH variable
 
 ### FAQ
 
