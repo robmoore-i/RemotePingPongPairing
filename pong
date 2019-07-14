@@ -1,0 +1,8 @@
+if [[ $# != "1" ]]
+then
+  echo "USAGE: $0 <your partner's name>"
+  exit 1
+fi
+
+git checkout remote-wip-$1
+git pull
