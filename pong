@@ -12,4 +12,5 @@ git pull
 wip_commit_hash=`git rev-parse HEAD`
 git checkout $original_branch
 git cherry-pick -n $wip_commit_hash
+git reset HEAD .
 ./delete-branch $wip_branch_name
