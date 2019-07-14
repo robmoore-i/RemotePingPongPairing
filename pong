@@ -4,7 +4,12 @@ then
   exit 1
 fi
 
-branch_name="remote-wip-$1"
-git fetch origin $branch_name
-git rebase $branch_name
+original_branch=`git name-rev --name-only HEAD`
+wip_branch_name="remote-wip-$1"
+git fetch origin $wip_branch_name
+git checkout $wip_branch_name
+git pull
+wip_commit_hash=`git rev-parse HEAD`
+git checkout $original_branch
+git cherry-pick -n $wip_commit_hash
 ./delete-branch $branch_name
