@@ -1,42 +1,45 @@
 # Remote ping-pong pairing
 
-## Desired Flow
+### Flow
 
 1. I am pairing remote with my partner.
 
-2. I want my partner to take over, but we have lots of WIP (very naughty).
+2. I want my partner to take over, but we have lots of WIP (I disappove).
 
 3. I run `./ping rob`
 
-- This puts my WIP onto a branch and pushes it.
+- This puts my WIP onto a branch called and pushes it.
 
 - I am responsible for deleting my local copy of the branch.
 
 4. My partner runs `./pong rob`
 
-- This fetches the remote WIP branch, and applies the change-list to the
-current branch, but without effecting the version control history.
+- This fetches the remote WIP branch, and applies the change-list to their
+  current branch without effecting the version control history.
 
 - It then deletes the WIP branch
 
-5. My partner continues working
+5. At this point my partner has an uncommited change-list equal to the
+   change-list I had on my machine before I ran a 'ping'. We continue
+   working as though nothing happened.
 
-## Current Flow
+6. (Optional) My partner reminds me to delete my local copy of the WIP branch.
 
-1. I am pairing remote with my partner.
+### Recommended usage
 
-2. I want my partner to take over, but we have lots of WIP (very naughty).
+1. Clone this repository somewhere
+2. Add it to your path.
 
-3. I run `./ping rob`
+### FAQ
 
-- This puts my WIP onto a branch and pushes it.
+-  Why does the local copy of WIP branch not get deleted on the creator side?
 
-- I am responsible for deleting my local copy of the branch.
+If, God forbid, something goes wrong, I would not like errors in my script to be
+responsible for erasing WIP.
 
-4. My partner runs `./pong rob`
+- Why do I pass my name to the script?
 
-- This fetches the WIP branch and rebases it onto the current branch (should be master)
-
-- It then deletes the WIP branch
-
-5. My partner continues working
+It doesn't actually matter what you pass - it needs to be some identifying word
+that you and your partner both put into the scripts. I could, feasibly, make it
+so that the script uses some formatting of the date as the remote branch id, but
+then that could be annoying because you'd have to watch out for boundary conditions.
