@@ -31,6 +31,10 @@
 
 2. Add it to your $PATH variable
 
+### Improvements
+
+It would be cool if these were git aliases, so I could do `git ping rob` to create a ping, `git ping-clean` to remove my local copy of the wip branch, and my partner could run `git pong rob` to collect and apply the remote wip to their current branch.
+
 ### FAQ
 
 -  Why does the local copy of WIP branch not get deleted on the creator side?
