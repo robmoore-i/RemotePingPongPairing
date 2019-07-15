@@ -8,9 +8,9 @@
 
 3. I run `./ping rob`
 
-- This puts my WIP onto a branch called and pushes it.
+- This puts my WIP onto a branch called 'remote-wip-rob' and pushes it.
 
-- I am responsible for deleting my local copy of the branch.
+- I am responsible for deleting my local copy of the branch. (I would use `git branch -D remote-wip-rob`).
 
 4. My partner runs `./pong rob`
 
